@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PairCurrency"
+    android:background="#E8E8E8">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="40dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:text="Amount"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/linear_layout_border"
+                android:layout_marginBottom="30dp">
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:background="@null"
+                    android:hint="Amount"
+                    android:text="1"
+                    android:inputType="number|textNoSuggestions"/>
+
+                <Spinner
+                    android:id="@+id/baseSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/switchSelectedSymbol"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/up_and_down_arrow"/>
+
+
+            <TextView
+                android:text="Convert to"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/linear_layout_border">
+
+                <EditText
+                    android:id="@+id/result"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:background="@null"
+                    android:hint="Convert to"
+                    android:inputType="number|textNoSuggestions"/>
+
+                <Spinner
+                    android:id="@+id/targetSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

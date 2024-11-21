@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80D6D6D6"
+    android:id="@+id/popUpLayout"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/popup_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Symbol list"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:id="@+id/symbolList"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close" />
+
+    </LinearLayout>
+
+</RelativeLayout>
