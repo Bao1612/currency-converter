@@ -20,7 +20,7 @@
             android:layout_height="56dp"
             android:id="@+id/tool_bar"
             android:elevation="4dp"
-            android:background="#00FFFF"
+            android:background="#FFA500"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
@@ -38,7 +38,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/nav_menu"
-        app:itemTextColor="#00FFFF"/>
+        app:itemTextColor="@color/black"/>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
